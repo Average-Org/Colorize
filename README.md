@@ -13,7 +13,7 @@ Colorize is a simple, yet helpful, color formatting tool designed for use with T
 
 ## Installation
 
-You can either add this as a NuGet package or create an assembly reference to the .DLL in the releases.
+You can either [add this as a NuGet package](https://www.nuget.org/packages/Colorize/1.0.0) or [create an assembly reference to the .DLL in the releases](https://github.com/Average-Org/Colorize/releases/download/1.0/Colorize.zip).
 
 **NOTE** - You need to put `Colorize.dll` in the bin folder of all TShock instances that utilize this library.
 
