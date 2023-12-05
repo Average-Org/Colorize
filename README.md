@@ -1,4 +1,4 @@
-# Colorize - TShock Color Formatting Tool
+![colorize](https://github.com/Average-Org/Colorize/assets/24498058/dba7b573-e4ad-4a6e-a876-f22e3401792a)
 
 ## Introduction
 
