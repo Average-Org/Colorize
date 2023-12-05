@@ -7,12 +7,12 @@ namespace Colorize
 {
     public static class Tools
     {
-        public static string ColorizeText(string text, Color color)
+        public static string TextColor(string text, Color color)
         {
             return $"[c/{color.Hex3()}:{text}]";
         }
 
-        public static string GradientText(string text, Color color, Color otherColor)
+        public static string TextGradient(string text, Color color, Color otherColor)
         {
             StringBuilder gradientedText = new();
 
@@ -22,6 +22,7 @@ namespace Colorize
                 float ratio = (float)index / (text.Length - 1);
                 Color thisColor = Color.Lerp(color, otherColor, ratio);
                 gradientedText.Append($"[c/{thisColor.Hex3()}:{c}]");
+                index++;
             }
             return gradientedText.ToString();
         }
@@ -38,7 +39,7 @@ namespace Colorize
 
         public static string ItemIcon(int itemID)
         {
-            return $"[i/{itemID}]";
+            return $"[i:{itemID}]";
         }
     }
 }

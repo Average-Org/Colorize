@@ -27,7 +27,7 @@ namespace Colorize
 
         public static void MsgGradient(this TSPlayer player, string text, Color color, Color otherColor)
         {
-            player.SendMessage(Tools.GradientText(text, color, otherColor), Color.White);
+            player.SendMessage(Tools.TextGradient(text, color, otherColor), Color.White);
         }
     }
 }
